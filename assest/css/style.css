@@ -3,6 +3,10 @@ body {
     text-align: center;
 }
 
+.container{
+    margin: 0 3.5rem;
+}
+
 button {
     background-color: rgba(0,0,0,0);
     outline: none;
@@ -22,24 +26,67 @@ h2 {
 input {
     width: 100%;
     padding: 5px 14px;
-    border: 2px solid #201f1d;
+    border-radius: 0.25rem;
+    border: none;
     margin-bottom: 10px;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,0.3);
     outline: none;
     color: #fff;
     font-size: 14px;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
 }
 
 input:focus {
-    border: 2px solid rgba(0,0,0,.4);
-    background-color: rgb(60,60,60);
+    border: none;
+}
+
+#form-cont{
+    border-radius: 2rem;
+    position: relative;
+}
+
+#blue-circle{
+    background-color: blue;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    z-index: -2;
+}
+
+#red-circle{
+    background-color: orangered;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    z-index: -1;
 }
 
 form {
-    background-color: #fff;
+    backdrop-filter: blur(1rem);
     padding: 20px;
     color: #000;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
 
 form p {
